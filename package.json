@@ -1,0 +1,10 @@
+{
+  "name": "argument",
+  "description": "A lightweight package to obtain arguments from the environment.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ezzygemini/argument.git"
+  },
+  "license": "MIT",
+  "version": "0.1.0"
+}
