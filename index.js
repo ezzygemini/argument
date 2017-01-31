@@ -48,7 +48,7 @@ const argument = (name, defValue) => {
   const uName = name.toUpperCase();
   const lName = name.toLowerCase();
   const args = [
-    uName, lName, `-${name}`, `--${name}`,
+    name, uName, lName, `-${name}`, `--${name}`,
     `-${uName}`, `--${uName}`, `-${lName}`, `--${lName}`
   ];
 
@@ -64,9 +64,9 @@ const argument = (name, defValue) => {
     }
 
     // We look in the node variables next.
-    argv = process.argv.find(a => a.indexOf(arg) > -1);
+    argv = process.argv.find(a => a.indexOf(arg) === 0);
     if (argv) {
-      return log(name, argv.split('=')[1], defValue);
+      return log(name, argv.split(/[=:]/)[1], defValue);
     }
 
   }
