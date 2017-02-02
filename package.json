@@ -5,6 +5,12 @@
     "type": "git",
     "url": "https://github.com/ezzygemini/argument.git"
   },
+  "scripts": {
+    "test": "node node_modules/testing"
+  },
   "license": "MIT",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "devDependencies": {
+    "testing": "git://github.com/ezzygemini/testing.git"
+  }
 }
