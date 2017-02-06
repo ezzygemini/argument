@@ -54,6 +54,7 @@ const argument = (name, defValue) => {
 
   let arg;
   let argv;
+  let argReg;
   for (let i = 0; i < args.length; i++) {
 
     arg = args[i];
@@ -63,10 +64,12 @@ const argument = (name, defValue) => {
       return log(arg, process.env[arg], defValue);
     }
 
+    argReg = new RegExp(`(^-+${name}[:=\\s].*$)|(^-+${name}$)`, 'i');
+
     // We look in the node variables next.
-    argv = process.argv.find(a => a.indexOf(arg) > -1);
+    argv = process.argv.find(a => argReg.test(a));
     if (argv) {
-      return log(name, argv.split('=')[1], defValue);
+      return log(name, argv.split(/[=:\s]/)[1], defValue);
     }
 
   }
