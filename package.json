@@ -6,7 +6,8 @@
     "url": "https://github.com/ezzygemini/argument.git"
   },
   "scripts": {
-    "test": "node node_modules/testing"
+    "test": "node node_modules/testing",
+    "build": ""
   },
   "license": "MIT",
   "version": "0.1.0",
