@@ -11,6 +11,6 @@
   "license": "MIT",
   "version": "0.1.0",
   "devDependencies": {
-    "testing": "git://github.com/ezzygemini/testing.git"
+    "testing": "ezzygemini/testing"
   }
 }
