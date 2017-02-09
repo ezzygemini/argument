@@ -1,4 +1,5 @@
 # Argument
+[![Build Status](https://travis-ci.org/ezzygemini/argument.svg?branch=master)](https://travis-ci.org/ezzygemini/argument)
 
 This small lightweight library will 
 help fetch arguments from the environment
