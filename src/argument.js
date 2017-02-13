@@ -64,12 +64,16 @@ const argument = (name, defValue) => {
       return log(arg, process.env[arg], defValue);
     }
 
-    argReg = new RegExp(`(^-+${name}[:=\\s].*$)|(^-+${name}$)`, 'i');
+    argReg = new RegExp(`(^-+${name}[=\\s].*$)|(^-+${name}$)`, 'i');
 
     // We look in the node variables next.
     argv = process.argv.find(a => argReg.test(a));
     if (argv) {
-      return log(name, argv.split(/[=:\s]/)[1], defValue);
+      return log(
+        name,
+        (argv.split(/[=\s]/)[1] || '').replace(/(^")|("$)/g, ''),
+        defValue
+      );
     }
 
   }
