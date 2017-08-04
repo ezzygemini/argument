@@ -11,7 +11,9 @@ const prefix = '[ENV]';
  */
 const log = (name, value, defValue) => {
   cache[name] = value;
-  console.info(`${prefix} ${name}: '${value}' (default: '${defValue || ''}')`);
+  if (!process.env.HIDE_ARGUMENTS) {
+    console.info(`${prefix} ${name}: '${value}' (default: '${defValue || ''}')`);
+  }
   return value;
 };
 
@@ -78,9 +80,11 @@ const argument = (name, defValue) => {
 
   }
 
-  console.info(
-    `${prefix} ${name}: [not found], using default value '${defValue || ''}'`
-  );
+  if (!process.env.HIDE_ARGUMENTS) {
+    console.info(
+      `${prefix} ${name}: [not found], using default value '${defValue || ''}'`
+    );
+  }
   return defValue;
 
 };
