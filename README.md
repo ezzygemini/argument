@@ -1,6 +1,6 @@
 # Argument
-[![Build Status](https://travis-ci.org/ezzygemini/argument.svg?branch=master)](https://travis-ci.org/ezzygemini/argument)
-[![Coverage Status](https://coveralls.io/repos/github/ezzygemini/argument/badge.svg?branch=master)](https://coveralls.io/github/ezzygemini/argument?branch=master)
+[![Build Status](https://travis-ci.org/ezzygemini/ezzy-argument.svg?branch=master)](https://travis-ci.org/ezzygemini/ezzy-argument)
+[![Coverage Status](https://coveralls.io/repos/github/ezzygemini/ezzy-argument/badge.svg?branch=master)](https://coveralls.io/github/ezzygemini/ezzy-argument?branch=master)
 
 This small lightweight library will 
 help fetch arguments from the environment
