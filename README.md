@@ -1,4 +1,4 @@
-# Argument
+# ezzy-argument
 [![Build Status](https://travis-ci.org/ezzygemini/ezzy-argument.svg?branch=master)](https://travis-ci.org/ezzygemini/ezzy-argument)
 [![Coverage Status](https://coveralls.io/repos/github/ezzygemini/ezzy-argument/badge.svg?branch=master)](https://coveralls.io/github/ezzygemini/ezzy-argument?branch=master)
 
@@ -10,7 +10,7 @@ By requesting this library, you'll be able
 to invoke:
 
 ```nodemon
-const arg = require('argument');
+const arg = require('ezzy-argument');
 arg('my_argument', 'default value');
 ```
 
