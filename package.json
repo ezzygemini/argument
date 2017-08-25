@@ -1,5 +1,5 @@
 {
-  "name": "argument",
+  "name": "ezzy-argument",
   "description": "A lightweight package to obtain arguments from the environment.",
   "repository": {
     "type": "git",
