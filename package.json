@@ -6,12 +6,12 @@
     "url": "https://github.com/ezzygemini/argument.git"
   },
   "scripts": {
-    "test": "node node_modules/testing",
+    "test": "node node_modules/ezzy-testing",
     "build": ""
   },
   "license": "MIT",
   "version": "0.1.0",
   "devDependencies": {
-    "testing": "ezzygemini/testing"
+    "ezzy-testing": "^0.1.0"
   }
 }
