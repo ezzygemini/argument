@@ -6,13 +6,14 @@ const prefix = '[ENV]';
  *
  * @param {string} name The name of the argument expected.
  * @param {*} value The value of the argument.
- * @param {*} defValue The default value expected.
+ * @param {*} defaultValue The default value expected.
  * @returns {*}
  */
-const log = (name, value, defValue) => {
+const log = (name, value, defaultValue) => {
   cache[name] = value;
   if (!process.env.HIDE_ARGUMENTS) {
-    console.info(`${prefix} ${name}: '${value}' (default: '${defValue || ''}')`);
+    console
+      .info(`${prefix} ${name}: '${value}' (default: '${defaultValue || ''}')`);
   }
   return value;
 };
@@ -89,4 +90,11 @@ const argument = (name, defValue) => {
 
 };
 
-module.exports = argument;
+// If this was included in the browser,
+// there's no need to look further when
+// we know we won't find anything.
+if (typeof window !== 'undefined') {
+  module.exports = (name, defaultValue) => defaultValue;
+} else {
+  module.exports = argument;
+}
