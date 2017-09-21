@@ -19,10 +19,8 @@
     "build": "npm run coverage"
   },
   "license": "MIT",
-  "devDependencies": {
-    "ezzy-testing": "^0.1.18"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "ezzy-testing": "^0.1.20"
+    "ezzy-testing": "^0.1.21"
   }
 }
