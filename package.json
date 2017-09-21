@@ -12,8 +12,11 @@
     "url": "https://github.com/ezzygemini/ezzy-argument.git"
   },
   "scripts": {
+    "coverage": "node node_modules/ezzy-testing/coverage",
+    "pretest": "npm install",
     "test": "node node_modules/ezzy-testing",
-    "build": ""
+    "prebuild": "npm install",
+    "build": "npm run coverage"
   },
   "license": "MIT",
   "devDependencies": {
