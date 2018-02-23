@@ -39,7 +39,7 @@ const argument = (name, defValue) => {
   }
 
   // If we've looked before, simply return the value.
-  if (cache[name]) {
+  if (cache.hasOwnProperty(name)) {
     return cache[name];
   }
 
@@ -86,6 +86,7 @@ const argument = (name, defValue) => {
       `${prefix} ${name}: [not found], using default value '${defValue || ''}'`
     );
   }
+  cache[name] = defValue;
   return defValue;
 
 };
