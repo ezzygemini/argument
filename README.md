@@ -1,4 +1,6 @@
 # ezzy-argument
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ezzygemini/ezzy-argument.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/ezzygemini/ezzy-argument.svg?branch=master)](https://travis-ci.org/ezzygemini/ezzy-argument)
 [![Coverage Status](https://coveralls.io/repos/github/ezzygemini/ezzy-argument/badge.svg?branch=master)](https://coveralls.io/github/ezzygemini/ezzy-argument?branch=master)
 
